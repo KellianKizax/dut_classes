@@ -1,0 +1,23 @@
+CM 1 04/06/2020 10h30 2h
+
+EXPERIENCES ALEATOIRES							UNIVERS "omega" (ensemble des issues possibles)
+
+	- lancer d'une pièce						{P,F}
+	- lancer d'un dé							{1,2,3,4,5,6}
+	- lancer de deux pièces (2x une pièce)		{(P,F),(F,P),(P,P),(F,F)}
+
+DEFINITION
+
+	P: "P"("O") => [0,1] (c R)
+	P("O") = 1
+	AinterB = vide	=>	P(AuB) = P(A) + P(B)
+	
+	("P"("O"),U,inter)
+	"O" = {P,F}
+	"P"("O") = {vide, {P}, {F}, {P,F}}
+	|"O"| = n		|"P"("O")| = 2^n
+	
+FORMULE
+	n parmis k
+	|k|	=	k! / (k-n)! * k^n
+	|n|

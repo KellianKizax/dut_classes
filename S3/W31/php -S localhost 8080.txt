@@ -1,0 +1,3 @@
+marche sous powershell
+cd ...
+php -S localhost:8080

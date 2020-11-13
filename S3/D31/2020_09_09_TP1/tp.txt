@@ -1,0 +1,25 @@
+countries(	PK_country_id:char,	name:varchar2,	CK_continent:varchar2,	region:varchar2,
+		surface_area:number, 	independence_year:number, 	population:number,
+		life_expectancy:number, gnp:number, 	gnp_old:number,
+		local_name:varchar2, 	government_form:varchar2, 	head_of_state:varchar2,
+		FK_capital:number,	code2:char)
+
+	COUNTRY_ID:	pos:1,	col_len:3,	char_len:3,	order:asc
+	CODE2:		pos:1,	col_len:2,	char_len:2,	order:asc
+
+
+cities(		PK_city_id:number,	name:varchar2,	FK_country_id:char,	district:varchar2,
+		population:number)
+
+	CITY_ID:	pos:1,	col_len:22	char_len:0	order:asc
+
+
+languages(	PK_FK_country_code:char,	PK_language:varchar2,	CK_official:char,	percentage,number)
+
+	LANGUAGE : 	pos:2,	col_len:30,	char_len:30,	order:asc
+	COUNTRY_CODE : 	pos:1,	col_len:3,	char_len:3,	order:asc
+
+
+SELECT column_name, data_type FROM all_tab_columns WHERE lower(table_name) = 'countries'; //cities, languages
+
+SELECT * FROM all_cons_columns WHERE lower(table_name) = 'countries';	//cities, languages

@@ -1,0 +1,2 @@
+Inst 0 - Code : 12 Args : 12 4 Résultats :16 0
+Inst 1 - Code : 34 Args : 34 8 Résultats :4 2

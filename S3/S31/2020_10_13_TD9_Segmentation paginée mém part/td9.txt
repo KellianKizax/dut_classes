@@ -1,0 +1,59 @@
+1 Segmentation paginée
+
+1.1.
+S1: 16ko; S2: 8ko; S1: 4ko
+
+
+
+1.2.
+
+Segment Page	Cadre
+---------------------
+S1	0	-
+	1	2
+	2	0
+---------------------
+S2	0	-
+	1	9
+---------------------
+S3	0	12
+
+Segments découpés en pages
+
+
+<S1,8212>
+segment : 1
+page :	2
+déplacement page : 8212-4096-4096+1 = 21
+cadre : 0
+déplacement cadre : 21
+adresse ph : 21
+
+(ajouté)
+<S1,5096>
+segment : 1
+page : 1
+déplacement page : 5096-4096 = 1000
+cadre : 2
+déplacement cadre : 1000
+adresse ph : 9192
+
+<S2,236>
+segment : 2
+page : 0
+déplacement page : 236
+cadre : 10
+déplacement cadre : 236
+adresse ph : 4096x10+236 = 41196
+
+<S3,5213>
+segment : 3
+page : segmentation fault
+déplacement page : -
+cadre : -
+déplacement cadre : -
+adresse ph : -
+
+2. Partage de segments en Unix
+
+

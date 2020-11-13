@@ -1,0 +1,1 @@
+robocopy .\ "G:\- Kellian\IUT" /MIR /XO

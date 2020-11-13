@@ -1,0 +1,11 @@
+MVC	Modèle  Vue  Controleur
+
+CONTROLEUR manipule MODELE
+CONTROLEUR selectionne VUE
+VUE modifie CONTROLEUR
+VUE affiche MODELE
+
+  C    => M
+/\ ||
+|| \/
+  V    => M

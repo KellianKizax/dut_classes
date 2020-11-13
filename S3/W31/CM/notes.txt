@@ -1,0 +1,111 @@
+Documentation PHP
+http://www.php.net/docs.html
+
+CM 1 - 03/09/2020 13h30 2h
+
+
+SYNTAXE
+
+	>$a;		>$a = 8;		>$b = 10;
+	>const NAME = "name";
+	>$message = "calcul sur " . $a . " et " . $b;
+	>$res = $a + $b;
+
+	>isset($res) 	// = true si $res existe, false dans le cas contraire
+	>is_int($a) 		// = true
+	>is_string($b) 	// = false
+	>gettype($a) 	// = "integer"
+
+>>> Typage dynamique
+
+TABLEAUX
+
+	a clés implicites
+	>$tab1 = [1, "deux", 3];
+	
+	a clés explicites
+	>$tab2 = [0 => 1, 1 => "deux", 3 => 3];
+	>$dico1 = ["un" => 1, "deux" => 2];
+
+	>$notes = [
+		'jean' => 3,
+		12 => ["Paul", "Pierre"]
+		]
+	>$notes[] = 9;	// $notes[13] = 9
+
+STRUCTURE DE CONTROLE
+
+	if()
+	{}
+	else
+	{}
+
+	for ($load = 1; $load<=100; $load++)
+	{}
+
+	$tab = ["a", "b", "c"];
+	foreach($tab as $module)
+	{
+		echo $module;
+	}
+
+COEXISTENCE PHP/HTML
+
+	<?php echo "";		//fichier fullphp.php
+
+	<body>
+	<?php
+		echo "<p> abcd </p>"; ?>
+		</body>
+
+	<body>
+	<?php
+		if(){} ?>
+		<p></p>
+	<?php
+		else{} ?>
+		<p></p>
+	</body>
+
+	<html>
+		<?php require("head.php"); ?>
+		<body>
+			<?php require("header.php"); ?>
+			<main>...</main>
+			<?php require("footer.php"); ?>
+		</body>
+	</html>
+
+QUELQUES DEFINITIONS
+
+	CLIENT : Envoie une requete et attend une reponse
+
+	SERVEUR : Attend une requete, la traite et envoie une reponse
+
+	PROTOCOLE HTTP : Ensemble de regles a respecter pour transettre des informations entre un client et un serveur. Ce protocole dispose de plusieurs methodes dont GET et POST.
+
+	Requete/Reponse HTTP : Messages entre client et serveur via le protocole HTTP
+
+	Serveur HTTP : Logiciel qui traite les requetes HTTP recues par le serveur web.
+
+COOKIES
+
+	> setcookie("nom",valeur,time() + 60*60*24*10);
+	
+	setcookie() toujours avant le code html
+	
+	le serveur php peut acceder au tableau global $_COOKIE
+	
+	un client peut refuser de stocker un cookie, ne jamais supposer qu'un cookie existe
+	
+SESSION
+
+	une session possède un identifiant unique attribué à sa creation
+	
+	> session_start()
+		id créé et associé à la session du client, toujours avant le code html
+	
+	tableau $_SESSION associé à l'id est créé sur le serveur, et on peut acceder aux variables de la session
+	l'id est transmis au client par cookie
+	le client ne connait que son identifiant
+
