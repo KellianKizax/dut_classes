@@ -1,0 +1,9 @@
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\bin\Debug\TP_02_07_2020_Déplacements entre listes.exe.config
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\bin\Debug\TP_02_07_2020_Déplacements entre listes.exe
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\bin\Debug\TP_02_07_2020_Déplacements entre listes.pdb
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\obj\Debug\TP_02_07_2020_Déplacements entre listes.csprojAssemblyReference.cache
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\obj\Debug\TP_02_07_2020_Déplacements_entre_listes.frmDepart.resources
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\obj\Debug\TP_02_07_2020_Déplacements_entre_listes.Properties.Resources.resources
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\obj\Debug\TP_02_07_2020_Déplacements entre listes.csproj.GenerateResource.cache
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\obj\Debug\TP_02_07_2020_Déplacements entre listes.exe
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Déplacements entre listes\TP_02_07_2020_Déplacements entre listes\obj\Debug\TP_02_07_2020_Déplacements entre listes.pdb

@@ -1,0 +1,10 @@
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\bin\Debug\TP_02_14_2020_Conjugaison.exe.config
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\bin\Debug\TP_02_14_2020_Conjugaison.exe
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\bin\Debug\TP_02_14_2020_Conjugaison.pdb
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\obj\Debug\TP_02_14_2020_Conjugaison.csprojAssemblyReference.cache
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\obj\Debug\TP_02_14_2020_Conjugaison.frmDepart.resources
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\obj\Debug\TP_02_14_2020_Conjugaison.Properties.Resources.resources
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\obj\Debug\TP_02_14_2020_Conjugaison.csproj.GenerateResource.cache
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\obj\Debug\TP_02_14_2020_Conjugaison.exe
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\obj\Debug\TP_02_14_2020_Conjugaison.pdb
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison\obj\Debug\TP_02_14_2020_Conjugaison.frmAjouterVerbe.resources

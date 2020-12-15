@@ -1,0 +1,14 @@
+X:\P11\TP_27_09_19\tiercé\obj\Debug\netcoreapp2.1\tiercé.csprojAssemblyReference.cache
+X:\P11\TP_27_09_19\tiercé\obj\Debug\netcoreapp2.1\tiercé.csproj.CoreCompileInputs.cache
+X:\P11\TP_27_09_19\tiercé\obj\Debug\netcoreapp2.1\tiercé.AssemblyInfoInputs.cache
+X:\P11\TP_27_09_19\tiercé\obj\Debug\netcoreapp2.1\tiercé.AssemblyInfo.cs
+X:\P11\TP_27_09_19\tiercé\bin\Debug\netcoreapp2.1\tiercé.deps.json
+X:\P11\TP_27_09_19\tiercé\bin\Debug\netcoreapp2.1\tiercé.runtimeconfig.json
+X:\P11\TP_27_09_19\tiercé\bin\Debug\netcoreapp2.1\tiercé.runtimeconfig.dev.json
+X:\P11\TP_27_09_19\tiercé\bin\Debug\netcoreapp2.1\tiercé.dll
+X:\P11\TP_27_09_19\tiercé\bin\Debug\netcoreapp2.1\tiercé.pdb
+X:\P11\TP_27_09_19\tiercé\bin\Debug\netcoreapp2.1\Librairie_Kellian.dll
+X:\P11\TP_27_09_19\tiercé\bin\Debug\netcoreapp2.1\Librairie_Kellian.pdb
+X:\P11\TP_27_09_19\tiercé\obj\Debug\netcoreapp2.1\tiercé.csproj.CopyComplete
+X:\P11\TP_27_09_19\tiercé\obj\Debug\netcoreapp2.1\tiercé.dll
+X:\P11\TP_27_09_19\tiercé\obj\Debug\netcoreapp2.1\tiercé.pdb

@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: sans;
+  font-size: 18px;
+  background-color: #fff;
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  align-self: stretch;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 2rem black;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 5px 5px .5rem black;
+  margin: 0;
+}
+
+h1 > span:first-child {
+    color: #00a934;
+}
+
+h1 > span:nth-child(2) {
+    color: #009fe3;
+}
+
+h1 > span:last-child {
+    color: #ff8001;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #009fe3;
+  padding: 2rem .5rem;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+main > section:first-of-type {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+}
+
+input {
+  margin: .5rem;
+}
+
+main > section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+table td {
+  border: 10px solid black;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  font-size: 6rem;
+  font-family: sans;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+table td.O,
+table td.X {
+  cursor: default;
+}
+
+
+footer {
+  text-align: center;
+  box-shadow: 0 0 2rem black;
+  z-index: 1;
+}

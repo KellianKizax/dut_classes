@@ -1,0 +1,11 @@
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\bin\Debug\netcoreapp2.1\fichiers.deps.json
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\bin\Debug\netcoreapp2.1\fichiers.runtimeconfig.json
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\bin\Debug\netcoreapp2.1\fichiers.runtimeconfig.dev.json
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\bin\Debug\netcoreapp2.1\fichiers.dll
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\bin\Debug\netcoreapp2.1\fichiers.pdb
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\obj\Debug\netcoreapp2.1\fichiers.csprojAssemblyReference.cache
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\obj\Debug\netcoreapp2.1\fichiers.csproj.CoreCompileInputs.cache
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\obj\Debug\netcoreapp2.1\fichiers.AssemblyInfoInputs.cache
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\obj\Debug\netcoreapp2.1\fichiers.AssemblyInfo.cs
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\obj\Debug\netcoreapp2.1\fichiers.dll
+X:\S1\P12\TP_19_11_28_file_dir\fichiers\obj\Debug\netcoreapp2.1\fichiers.pdb

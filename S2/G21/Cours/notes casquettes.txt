@@ -1,0 +1,48 @@
+Ingenieur dans le domaine du fonctionnel
+	comprendre le milieu, découvrir l'envirronement
+
+Technicien
+	propose des solutions adaptés aux besoins, aux restrictions
+	peut aussi travailler dans la solution
+
+Organisateur
+	s'entoure des bonnes personnes avec les bonnes compétences
+	organise les ressources afin de bien s'en servir au bon moment
+
+Gestionnaire
+	responsable du budget / planning / charges / couts
+	trouver des plans d'actions, résoudre les aléas
+
+Communicateur
+	anime le groupe
+	diffuse les informations
+
+Geographe historien
+	tracabilité du projet
+	emet des plans
+
+Ecrivains
+	emet des specs
+	tableau de suivi
+
+Promoteur
+	vend son projet
+	motive ses troupes
+
+Negociateur
+	s'arrange avec les clients, les membres de l'équipe
+	negocie avec le patron, le client, l'équipe
+
+Formateur
+	donne l'exemple aux membres de l'équipes
+	montre l'exemple
+	forme les futurs utilisateurs du projet
+
+Manageur
+	mène les troupes, place des objectifs
+	sanctionne, récompense
+
+Psychologue
+	assure la coherence, la cohesion de l'équipe
+	gère les conflits, anticipe les besoins / problèmes humains
+	ecoute les membres de l'équipe

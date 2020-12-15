@@ -1,0 +1,382 @@
+body {
+	background-color: #0f4749;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/************************
+ * Headers and titles
+ ************************/
+
+h1 {
+	color: #eba509;
+	font-size: 3rem;
+	font-style: italic;
+	margin: 0;
+	order: 1;
+	padding-left: 2rem;
+	text-shadow: black 1px 0 10px;
+}
+
+h2 {
+	border-bottom: 2px dotted black;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+h3 {
+	margin: 0;
+	margin-bottom: 1.5rem;
+	padding: .5rem;
+	text-align: center;
+}
+
+h4 {
+	margin-bottom: 1rem;
+	margin-top: 0;
+	text-decoration: underline;
+}
+
+
+/************************
+ * Global
+ ************************/
+
+main {
+	background-color: #fafafa;
+	display: flex;
+}
+
+section,
+aside {
+	padding: 2rem;
+	flex-grow: 5;
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+figure {
+	margin: 0;
+}
+
+iframe {
+	border: 0;
+	height: 450px;
+	width: 100%;
+}
+
+
+/************************
+ * Listes
+ ************************/
+
+ul {
+	list-style-type: none;
+	margin: 2rem 0;
+	padding: 0;
+}
+
+li {
+	background-color: #8a69d0;
+	border-radius: 2rem;
+	color: #fafafa;
+	margin-bottom: 1rem;
+	padding: 1rem 1.5rem;
+	text-align: center;
+}
+
+
+/************************
+ * Headers
+ ************************/
+
+header {
+	padding: 1rem;
+	padding-bottom: 1.5rem;
+}
+
+header img {
+	height: 128px;
+}
+
+main header {
+	padding: 0;
+}
+
+body>header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/************************
+ * Navigation
+ ************************/
+
+nav {
+	background-color: #8a69d0;
+	min-width: 10rem;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav li {
+	background-color: #e609eb;
+	display: block;
+	margin: .5rem 0;
+	padding: .5rem 0;
+	border-top-left-radius: unset;
+	border-bottom-left-radius: unset;
+	box-shadow: black 5px 5px 5px;
+	text-align: right;
+}
+
+nav li:hover {
+	transition-duration: 300ms;
+	transition-property: background-color, width;
+	background-color: #eba509;
+	width: 110%;
+}
+
+nav li:hover a {
+	transition-duration: 300ms;
+	transition-property: color;
+	color: black;
+}
+
+nav a {
+	color: #fafafa;
+	font-weight: bold;
+	text-decoration: none;
+	padding-right: 1rem;
+}
+
+nav li.nav {
+	background-color: #eba509;
+}
+
+nav li.nav a {
+	color: black;
+}
+
+nav li.nav a::before {
+	content:"";
+	display:inline-block;
+   	width: 1rem;
+   	height: 1rem;
+   	background:url("https://moodle3.unistra.fr/pluginfile.php/653489/mod_page/content/80/rubikscube.png") no-repeat;
+   	background-size: 100%;
+		margin-right: 0.5rem;
+}
+
+
+/************************
+ * Tables
+ ************************/
+
+table {
+	background-color: #fafafa;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th,
+table td {
+	border: 1px solid black;
+	padding: .5rem;
+	text-align: center;
+}
+
+table th {
+	background-color: #8a69d0;
+	color: #fafafa;
+}
+
+
+/************************
+ * Forms
+ ************************/
+
+form {
+	background-color: #ddd;
+	padding: 1.5rem;
+}
+
+/************************
+ * Accueil
+ ************************/
+
+ header span:first-of-type {
+	 color: #e609eb;
+ }
+
+ header span {
+	 color: #8a69d0;
+ }
+
+ header span:last-of-type{
+	 color: #eba509;
+ }
+
+/************************
+ * Jeux
+ ************************/
+
+article.jeux {
+	border: 2px dashed black;
+	border-radius: 1.5rem;
+	margin: 0 0 1rem 0;
+}
+
+article.jeux h3 {
+	background-color: #eba509;
+	border-bottom: 1px solid black;
+	border-radius: 1.5rem 1.5rem 0 0;
+	font-weight: bold;
+	box-shadow: black 0 5px 5px;
+}
+
+article.jeux section,
+article.jeux aside {
+	padding-bottom: 1rem;
+	padding-top: 0;
+}
+
+article.jeux figure {
+	width: 50%;
+}
+
+article.jeux figure img {
+	max-width: 15rem;
+}
+
+article.jeux p {
+	font-style: italic;
+	margin-bottom: .5rem;
+	margin-top: 0;
+}
+
+article.jeux:hover {
+	background-color: #ddd;
+}
+
+section header.jeux {
+	display: unset;
+}
+
+
+/************************
+ * Thés
+ ************************/
+
+section.thes {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+section.thes header {
+	width: 100%;
+}
+
+article.thes {
+	border: 2px dashed black;
+	margin: .5rem;
+	max-width: 15rem;
+}
+
+article.thes h3 {
+	background-color: #e609eb;
+	color: #fafafa;
+}
+
+article.thes figure {
+	max-width: 15rem;
+}
+
+article.thes figure img {
+	width: 100%;
+}
+
+article.thes p {
+	padding: 0 0.5rem;
+}
+
+article.thes footer {
+	background: #ddd;
+	color: black;
+	padding: 1rem;
+}
+
+article.thes:hover {
+	box-shadow: black 0 0 5px;
+	border: 1px solid black;
+}
+
+/************************
+ * Reservation
+ ************************/
+
+section ul {
+	display: flex;
+	flex-direction: row;
+}
+
+section ul li {
+	width: 100%;
+	margin: 0.5rem;
+}
+
+form {
+	background-color: #ddd;
+	padding: 1.5rem;
+}
+
+form label {
+	display: inline-block;
+	width: 7rem;
+}
+
+form input {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+form fieldset {
+	border-left: 0;
+	border-right: 0;
+	margin: 1rem 0;
+}
+
+form fieldset legend {
+	font-weight: bold;
+}
+
+form fieldset input[type=radio] {
+	margin-right: .5rem;
+}
+
+form textarea {
+	display: block;
+	margin: 0.5rem 0;
+}
+
+/************************
+ * Footer
+ ************************/
+
+footer {
+	padding: 2rem;
+	text-align: center;
+}
+
+footer p {
+	color: #fafafa;
+	margin: 0;
+}

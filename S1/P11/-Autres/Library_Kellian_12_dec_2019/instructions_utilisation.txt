@@ -1,0 +1,18 @@
+Pour utiliser la librairie dans votre programme vous devez :
+
+-Lancez Visual Studio, créez votre projet etc...
+-dans la partie de droite "Explorateur de solutions", cliquez DROIT sur "Dépendances" => "Ajouter une référence" => "Parcourir" (en bas)
+	Puis localisez le fichier .dll dans le dossier LibrairieKellian
+-La librairie est maintenant associée avec votre projet (il faudra répéter l'opération si vous voulez mettre à jour la librairie)
+
+-Afin d'utiliser la librairie dans votre programme :
+	using K_GOFFIC_Library;
+
+-Afin d'utiliser les fonctions de la librairie dans le programme (par exmple avec un factoriel, voir le .cs pour toutes les fonctions) :
+	using K_GOFFIC_Library;
+	x = 3;
+	factorielX = K_GOFFIC_Library.Library.Factoriel(x);
+
+	En général :
+		using K_GOFFIC_Library;
+		<var> = K_GOFFIC_Library.Library.{<Fonction>, <Procédure>}( {<parametre>, <parametre>, etc} );

@@ -1,0 +1,11 @@
+X:\S1\P12\TP_19_12_12_Table_Dico\table\bin\Debug\netcoreapp2.1\table.deps.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table\bin\Debug\netcoreapp2.1\table.runtimeconfig.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table\bin\Debug\netcoreapp2.1\table.runtimeconfig.dev.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table\bin\Debug\netcoreapp2.1\table.dll
+X:\S1\P12\TP_19_12_12_Table_Dico\table\bin\Debug\netcoreapp2.1\table.pdb
+X:\S1\P12\TP_19_12_12_Table_Dico\table\obj\Debug\netcoreapp2.1\table.csprojAssemblyReference.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table\obj\Debug\netcoreapp2.1\table.csproj.CoreCompileInputs.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table\obj\Debug\netcoreapp2.1\table.AssemblyInfoInputs.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table\obj\Debug\netcoreapp2.1\table.AssemblyInfo.cs
+X:\S1\P12\TP_19_12_12_Table_Dico\table\obj\Debug\netcoreapp2.1\table.dll
+X:\S1\P12\TP_19_12_12_Table_Dico\table\obj\Debug\netcoreapp2.1\table.pdb

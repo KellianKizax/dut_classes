@@ -1,0 +1,81 @@
+mission => chef parmi les militaires
+
+mission	//qdatabaz negocie espece
+---
+code + nomplanete
+observations
+nombre-capture
+
+
+militaire
+---
+matricule
+nom
+grade
+age
+
+
+civil	//origine planete
+---
+matricule
+nom
+specialité
+
+
+planete
+---
+nom
+atmosphere
+pesanteur
+
+
+espece	//presents sur planete
+---
+nom espece
+couleur
+	//heritage enemies
+type d'armes
+agressivité
+	//heritage alliees
+date premier contact
+degre bienveillance
+instrument musique favori
+
+
+informateur ET	//appartenance espece ennemie // date chaque contact
+---
+nom de code
+somme versée
+appreciation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exemplaire( 	#_ISBN_ ; _numero_ ;		etat )
+
+Livre( 		_ISBN_ ;			titre ; auteur )
+
+Emprunté_Par( 	#_codePers_ ; #_ISBN,numero_ ;	dateEmprunt )
+
+Emprunteur( 	_codePers_ ;			nom ; prenom )
+
+Etudiant( 	#_codePers_ ;				departement ; promotion )
+
+Enseignant( 	#_codePers_ ;			codeINE ; spécialité )
+
+Recommande( 	#_codePers_ ; #_ISBN_ ;		commentaire )
+
+
+
+

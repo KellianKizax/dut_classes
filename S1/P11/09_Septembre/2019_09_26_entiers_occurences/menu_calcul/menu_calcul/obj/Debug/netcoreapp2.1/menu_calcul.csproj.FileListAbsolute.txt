@@ -1,0 +1,14 @@
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\bin\Debug\netcoreapp2.1\menu_calcul.deps.json
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\bin\Debug\netcoreapp2.1\menu_calcul.runtimeconfig.json
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\bin\Debug\netcoreapp2.1\menu_calcul.runtimeconfig.dev.json
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\bin\Debug\netcoreapp2.1\menu_calcul.dll
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\bin\Debug\netcoreapp2.1\menu_calcul.pdb
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\obj\Debug\netcoreapp2.1\menu_calcul.csprojAssemblyReference.cache
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\obj\Debug\netcoreapp2.1\menu_calcul.csproj.CoreCompileInputs.cache
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\obj\Debug\netcoreapp2.1\menu_calcul.AssemblyInfoInputs.cache
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\obj\Debug\netcoreapp2.1\menu_calcul.AssemblyInfo.cs
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\obj\Debug\netcoreapp2.1\menu_calcul.dll
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\obj\Debug\netcoreapp2.1\menu_calcul.pdb
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\bin\Debug\netcoreapp2.1\Librairie_Kellian.dll
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\bin\Debug\netcoreapp2.1\Librairie_Kellian.pdb
+X:\P11\TP_26_09_19\menu_calcul\menu_calcul\obj\Debug\netcoreapp2.1\menu_calcul.csproj.CopyComplete

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Librairie_Kellian">
+      <HintPath>..\..\Librairie_Kellian\obj\Debug\netstandard2.0\Librairie_Kellian.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

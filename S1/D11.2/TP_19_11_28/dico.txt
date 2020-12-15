@@ -1,0 +1,32 @@
+1	oui
+2	non
+3	non
+4	cuicui
+5	non
+6	oui
+7	non
+8	oui
+9	oui
+10	non
+
+2.1
+un camelot peut ne rien avoir vendu
+2.2
+prix établis en fonction du badaud camelot et produit
+2.3
+pour un produit et un acheteur, il y a un vendeur.
+
+3.1
+prix dans produit
+3.2
+prix dans a en stock
+3.3
+lien ident sur produit entre cat
+3.4
+cif sur produit
+3.5
+qt dans a en stock
+
+4
+a   -> b dfs
+a,c -> b

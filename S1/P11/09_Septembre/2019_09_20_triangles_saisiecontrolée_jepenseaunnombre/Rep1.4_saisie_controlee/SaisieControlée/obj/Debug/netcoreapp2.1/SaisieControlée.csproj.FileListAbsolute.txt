@@ -1,0 +1,11 @@
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\bin\Debug\netcoreapp2.1\SaisieControlée.deps.json
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\bin\Debug\netcoreapp2.1\SaisieControlée.runtimeconfig.json
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\bin\Debug\netcoreapp2.1\SaisieControlée.runtimeconfig.dev.json
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\bin\Debug\netcoreapp2.1\SaisieControlée.dll
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\bin\Debug\netcoreapp2.1\SaisieControlée.pdb
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\obj\Debug\netcoreapp2.1\SaisieControlée.csprojAssemblyReference.cache
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\obj\Debug\netcoreapp2.1\SaisieControlée.csproj.CoreCompileInputs.cache
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\obj\Debug\netcoreapp2.1\SaisieControlée.AssemblyInfoInputs.cache
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\obj\Debug\netcoreapp2.1\SaisieControlée.AssemblyInfo.cs
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\obj\Debug\netcoreapp2.1\SaisieControlée.dll
+X:\P11\TP_20_09_19\SaisieControlée\SaisieControlée\obj\Debug\netcoreapp2.1\SaisieControlée.pdb

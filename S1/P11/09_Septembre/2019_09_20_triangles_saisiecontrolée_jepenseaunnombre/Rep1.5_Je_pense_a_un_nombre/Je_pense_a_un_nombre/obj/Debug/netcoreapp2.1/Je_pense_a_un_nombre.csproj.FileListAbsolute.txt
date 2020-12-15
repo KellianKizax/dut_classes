@@ -1,0 +1,11 @@
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\bin\Debug\netcoreapp2.1\Je_pense_a_un_nombre.deps.json
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\bin\Debug\netcoreapp2.1\Je_pense_a_un_nombre.runtimeconfig.json
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\bin\Debug\netcoreapp2.1\Je_pense_a_un_nombre.runtimeconfig.dev.json
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\bin\Debug\netcoreapp2.1\Je_pense_a_un_nombre.dll
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\bin\Debug\netcoreapp2.1\Je_pense_a_un_nombre.pdb
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\obj\Debug\netcoreapp2.1\Je_pense_a_un_nombre.csprojAssemblyReference.cache
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\obj\Debug\netcoreapp2.1\Je_pense_a_un_nombre.csproj.CoreCompileInputs.cache
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\obj\Debug\netcoreapp2.1\Je_pense_a_un_nombre.AssemblyInfoInputs.cache
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\obj\Debug\netcoreapp2.1\Je_pense_a_un_nombre.AssemblyInfo.cs
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\obj\Debug\netcoreapp2.1\Je_pense_a_un_nombre.dll
+X:\P11\TP_20_09_19\Je_pense_a_un_nombre\Je_pense_a_un_nombre\obj\Debug\netcoreapp2.1\Je_pense_a_un_nombre.pdb

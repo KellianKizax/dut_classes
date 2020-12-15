@@ -1,0 +1,11 @@
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\bin\Debug\netcoreapp2.1\Rep1.6_10entiers.deps.json
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\bin\Debug\netcoreapp2.1\Rep1.6_10entiers.runtimeconfig.json
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\bin\Debug\netcoreapp2.1\Rep1.6_10entiers.runtimeconfig.dev.json
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\bin\Debug\netcoreapp2.1\Rep1.6_10entiers.dll
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\bin\Debug\netcoreapp2.1\Rep1.6_10entiers.pdb
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\obj\Debug\netcoreapp2.1\Rep1.6_10entiers.csprojAssemblyReference.cache
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\obj\Debug\netcoreapp2.1\Rep1.6_10entiers.csproj.CoreCompileInputs.cache
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\obj\Debug\netcoreapp2.1\Rep1.6_10entiers.AssemblyInfoInputs.cache
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\obj\Debug\netcoreapp2.1\Rep1.6_10entiers.AssemblyInfo.cs
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\obj\Debug\netcoreapp2.1\Rep1.6_10entiers.dll
+X:\P11\TP_20_09_19\Rep1.6_10entiers\Rep1.6_10entiers\obj\Debug\netcoreapp2.1\Rep1.6_10entiers.pdb

@@ -1,0 +1,9 @@
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\bin\Debug\TP_01_29_2020.exe.config
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\bin\Debug\TP_01_29_2020.exe
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\bin\Debug\TP_01_29_2020.pdb
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\obj\Debug\TP_01_29_2020.csprojAssemblyReference.cache
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\obj\Debug\TP_01_29_2020.Form1.resources
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\obj\Debug\TP_01_29_2020.Properties.Resources.resources
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\obj\Debug\TP_01_29_2020.csproj.GenerateResource.cache
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\obj\Debug\TP_01_29_2020.exe
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_01_29_2020\TP_01_29_2020\obj\Debug\TP_01_29_2020.pdb

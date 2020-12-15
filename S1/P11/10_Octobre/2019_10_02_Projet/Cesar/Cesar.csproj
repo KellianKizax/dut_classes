@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="LibrairieCesar">
+      <HintPath>..\LibrairieCesar\LibrairieCesar\bin\Debug\netstandard2.0\LibrairieCesar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

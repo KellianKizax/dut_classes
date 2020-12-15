@@ -1,0 +1,11 @@
+intro : (1/3min)
+	Presentation entreprise
+	pourquoi on a choisi cette entreprise
+	amener le sujet, l'emplacement de l'entreprise sur le marché
+	point special / particulier de l'entreprise (sur lequel on pose notre problematique ou pas loin)
+	annonce du plan
+
+1.historique / culture interne de l'entreprise
+2. santé de l'entreprise (elmt => entr se porte bien et porte mal)
+	=> diagnostique interne (forces et faiblesses rapport concurrence et externe)
+	=> Analyse SWOT / modèle PESTEL / 5 forces de PORTER

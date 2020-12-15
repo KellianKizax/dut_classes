@@ -1,0 +1,9 @@
+monsaint:x:75910:10100:MONSAINT Michelle:/home/monsaint:/bin/csh
+ritchie:x:75920:10100:RITCHIE Dennis:/home/ritchie:/bin/csh
+csharp:x:158225:10150:SHARP Carole:/home/csharp:/bin/bash
+jshell:x:75904:10100:SHELL Julian:/home/jshell:/bin/csh
+torvalds:x:158243:10150:TORVALDS Linus:/home/torvalds:/bin/ksh
+assange:x:158255:10150:ASSANGE Julian:/home/assange:/bin/bash
+rpm:x:13:101:system user for rpm:/var/lib/rpm:/bin/false
+sync:x:5:0:sync:/bin:/bin/sync
+sshd:x:75:75::/var/run/sshd:/usr/sbin/nologin

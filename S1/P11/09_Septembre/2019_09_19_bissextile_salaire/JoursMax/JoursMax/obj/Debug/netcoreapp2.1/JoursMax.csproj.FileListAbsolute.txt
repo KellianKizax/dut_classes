@@ -1,0 +1,11 @@
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\bin\Debug\netcoreapp2.1\JoursMax.deps.json
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\bin\Debug\netcoreapp2.1\JoursMax.runtimeconfig.json
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\bin\Debug\netcoreapp2.1\JoursMax.runtimeconfig.dev.json
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\bin\Debug\netcoreapp2.1\JoursMax.dll
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\bin\Debug\netcoreapp2.1\JoursMax.pdb
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\obj\Debug\netcoreapp2.1\JoursMax.csprojAssemblyReference.cache
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\obj\Debug\netcoreapp2.1\JoursMax.csproj.CoreCompileInputs.cache
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\obj\Debug\netcoreapp2.1\JoursMax.AssemblyInfoInputs.cache
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\obj\Debug\netcoreapp2.1\JoursMax.AssemblyInfo.cs
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\obj\Debug\netcoreapp2.1\JoursMax.dll
+X:\P11\TP_19_09_2019\JoursMax\JoursMax\obj\Debug\netcoreapp2.1\JoursMax.pdb

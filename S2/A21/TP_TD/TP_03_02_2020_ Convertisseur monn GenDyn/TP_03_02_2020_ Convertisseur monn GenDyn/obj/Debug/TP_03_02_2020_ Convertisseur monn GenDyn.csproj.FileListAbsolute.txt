@@ -1,0 +1,9 @@
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\bin\Debug\TP_03_02_2020_ Convertisseur monn GenDyn.exe.config
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\bin\Debug\TP_03_02_2020_ Convertisseur monn GenDyn.exe
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\bin\Debug\TP_03_02_2020_ Convertisseur monn GenDyn.pdb
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\obj\Debug\TP_03_02_2020_ Convertisseur monn GenDyn.csprojAssemblyReference.cache
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\obj\Debug\TP_03_02_2020__Convertisseur_monn_GenDyn.frmConvertisseur.resources
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\obj\Debug\TP_03_02_2020__Convertisseur_monn_GenDyn.Properties.Resources.resources
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\obj\Debug\TP_03_02_2020_ Convertisseur monn GenDyn.csproj.GenerateResource.cache
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\obj\Debug\TP_03_02_2020_ Convertisseur monn GenDyn.exe
+D:\Systeme\Raccourcis bureau\Documents\Cours\A21\TP_TD\TP_03_02_2020_ Convertisseur monn GenDyn\TP_03_02_2020_ Convertisseur monn GenDyn\obj\Debug\TP_03_02_2020_ Convertisseur monn GenDyn.pdb

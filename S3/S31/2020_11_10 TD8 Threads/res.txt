@@ -1,3 +1,1 @@
-Inst 1 - Code : 1 Args : 12 16 Résultats :0 32570
-Inst 2 - Code : 5 Args : 34 4 Résultats :2 32570
 	

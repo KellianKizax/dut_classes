@@ -1,0 +1,11 @@
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\bin\Debug\netcoreapp2.1\dix_entiers_somme.deps.json
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\bin\Debug\netcoreapp2.1\dix_entiers_somme.runtimeconfig.json
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\bin\Debug\netcoreapp2.1\dix_entiers_somme.runtimeconfig.dev.json
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\bin\Debug\netcoreapp2.1\dix_entiers_somme.dll
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\bin\Debug\netcoreapp2.1\dix_entiers_somme.pdb
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\obj\Debug\netcoreapp2.1\dix_entiers_somme.csprojAssemblyReference.cache
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\obj\Debug\netcoreapp2.1\dix_entiers_somme.csproj.CoreCompileInputs.cache
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\obj\Debug\netcoreapp2.1\dix_entiers_somme.AssemblyInfoInputs.cache
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\obj\Debug\netcoreapp2.1\dix_entiers_somme.AssemblyInfo.cs
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\obj\Debug\netcoreapp2.1\dix_entiers_somme.dll
+X:\P11\TP_26_09_19\dix_entiers_somme\dix_entiers_somme\obj\Debug\netcoreapp2.1\dix_entiers_somme.pdb

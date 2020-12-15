@@ -1,0 +1,643 @@
+<!--
+  CARDIAC COMPUTER SIMULATOR AND ASSEMBLER
+  Simulator based on the original CARDIAC simulator written by Brian L. Stuart
+  Adapted and extended by Alain Ketterlin and Cedric Bastoul
+-->
+
+<html>
+<head>
+<title>Cardiac S21 3.0</title>
+<style type="text/css">
+table#memory input {
+    width: 3em;
+}
+span#state {
+    font-weight: bold;
+    color: red;
+</style>
+<script>
+// Constants
+var OPCODES = {  INP:0,OUT:1,LDA:2,LDI:3,STA:4,STI:5,ADD:6,SUB:7,JAZ:8,HRS:9};
+var OPCNAMES = ['INP','OUT','LDA','LDI','STA','STI','ADD','SUB','JAZ','HRS'];
+var COLOR_PC = '#99FFCC';
+var COLOR_IR = '#fe2e2e';
+var COLOR_OP = '#f6cac9';
+var COLOR_HS = '#FF0000';
+
+// Elements from the document
+var e_cpu, e_state;
+var e_pc;
+var e_ir; // keep pc of current IR contents
+var e_ir_src, e_ir_opcode, e_ir_operand;
+var e_acc;
+var e_deck, e_input, e_output;
+
+// Globals
+var autorun;
+var autorun_id;
+
+function init() {
+    autorun = false;
+    e_cpu = document.getElementById('cpu');
+    e_state = document.getElementById('state');
+    e_pc = document.getElementById('pc');
+    e_ir_src = document.getElementById('ir_src');
+    e_ir = document.getElementById('ir');
+    e_ir_opcode = document.getElementById('opcode');
+    e_ir_operand = document.getElementById('operand');
+    e_acc = document.getElementById('acc');
+    e_deck = document.getElementById('deck');
+    e_input = document.getElementById('input');
+    e_output = document.getElementById('output');
+}
+
+function hidepc() {
+    var pcs = e_pc.value;
+    var oldpc = document.getElementById('mem'+ndig(pcs, 2));
+    // See http://stackoverflow.com/questions/3506050/how-to-reset-the-style-properties-to-their-css-defaults-in-javascript
+    oldpc.style.backgroundColor = '';
+    oldpc.style.color = '';
+}
+function showpc() {
+    var pcs = e_pc.value;
+    var newpc = document.getElementById('mem'+ndig(pcs, 2));
+    newpc.style.backgroundColor = COLOR_PC;
+}
+function hideir() {
+    var pcs = ir_src.value;
+    var insn = document.getElementById('mem'+ndig(pcs, 2));
+    insn.style.color = '';
+    var code = Number(insn.value);
+    var opc = Math.floor(code / 100);
+    var opr = code % 100;
+    document.getElementById('opc'+opc).style.backgroundColor = '';
+    document.getElementById('mem'+ndig(opr,2)).style.backgroundColor = '';
+    e_ir.value = '';
+    e_ir_opcode.value = '';
+    e_ir_operand.value = '';
+}
+function showir() {
+    var pcs = e_pc.value;
+    ir_src.value = pcs;
+    var insn = document.getElementById('mem'+ndig(pcs, 2));
+    insn.style.color = COLOR_IR;
+    var code = Number(insn.value);
+    var opc = Math.floor(code / 100);
+    var opr = code % 100;
+    document.getElementById('opc'+opc).style.backgroundColor = COLOR_OP;
+    document.getElementById('mem'+ndig(opr,2)).style.backgroundColor = COLOR_OP;
+    e_ir.value = ndig(code,3);
+    e_ir_opcode.value = OPCNAMES[opc];
+    e_ir_operand.value = ndig(opr, 2);
+}
+
+function doreset() {
+    e_cpu.style.backgroundColor = '';
+    e_state.innerHTML = '';
+    hidepc();
+    hideir();
+    e_pc.value = '00';
+    showpc();
+    e_ir_src.value = '';
+    e_ir.value = '';
+    e_ir_opcode.value = '';
+    e_ir_operand.value = '';
+    e_acc.value = '0000';
+    document.getElementById('clearmem').disabled = false;
+    document.getElementById('step').disabled = false;
+    document.getElementById('slow').disabled = false;
+    document.getElementById('run').disabled = false;
+    document.getElementById('stop').disabled = false;
+    e_output.value = '';
+}
+
+// Return the string composed with the n last characters of the conversion
+// of val to string with leading zeros.
+function ndig(val, n) {
+    if (val < 0) {
+        return '-'+('00000' + (-val)).slice(-n);
+    } else {
+        return ('00000' + val).slice(-n);
+    }
+}
+
+function doclearmem() {
+    document.getElementById('mem00').value='001';
+    for (var i = 1; i < 99; ++i) {
+        var pos = ndig(i, 2);
+        var mem = document.getElementById('mem'+pos);
+        mem.value = '';
+        mem.title = '';
+        // FIXME: labels
+        document.getElementById('lbl'+pos).innerHTML = pos;
+        document.getElementById('equ'+pos).innerHTML = '';
+    }
+    document.getElementById('mem99').value=''+OPCODES.JAZ+'--';
+}
+
+function doload() {
+    // Make sure the input ends with a newline
+    var s = e_deck.value;
+    if ( s.slice(-1) != '\n' )
+        s += '\n';
+    e_input.value = s;
+}
+
+function get_input() {
+    var s = e_input.value;
+    var p = s.indexOf('\n');
+    if ( p == -1 ) {
+        e_input.value = '';
+        return s;
+    }
+    else {
+        e_input.value = s.slice(p+1);
+        return s.slice(0,p);
+    }
+}
+
+function crash(msg) {
+    autorun = false;
+    e_cpu.style.backgroundColor = COLOR_HS;
+    e_state.innerHTML = '(CRASH : '+msg+')';
+    document.getElementById('clearmem').disabled = true;
+    document.getElementById('step').disabled = true;
+    document.getElementById('slow').disabled = true;
+    document.getElementById('run').disabled = true;
+    document.getElementById('stop').disabled = true;
+}
+
+// Utilities
+function fetch(addr) {
+    return Number(document.getElementById('mem'+ndig(addr, 2)).value);
+}
+function store(addr, val) {
+    document.getElementById('mem'+ndig(addr, 2)).value = ndig(val, 3);
+}
+
+// Main do... functions
+
+function dostep() {
+    if ( e_state.innerHTML != '' )
+        return;
+    // Fetch (+ some decode)
+    hideir();
+    var pc = Number(e_pc.value);
+    var ir = document.getElementById('mem'+ndig(pc, 2)).value;
+    if (ir == '' )
+    {
+        showpc();
+        crash('Instruction ill&eacute;gale');
+        return;
+    }
+    hidepc(); // subtle order with next, for coloring
+    showir();
+    var acc = Number(e_acc.value);
+    ++pc;
+    // Decode
+    var opc = Math.floor(ir / 100);
+    var addr = ir % 100;
+    // Execute
+    switch (opc) {
+    case OPCODES.INP:	// INP - Input
+        var s = get_input();
+        if (s == '') {
+            crash('INP a &eacute;chou&eacute;');
+            return;
+        } else {
+	    store(addr, Number(s));
+        }
+        break;
+    case OPCODES.OUT:	// OUT - Output
+        e_output.value += ndig(fetch(addr), 3)+'\n';
+        break;
+    case OPCODES.LDA:	// LDA - Load to Acc
+        acc = fetch(addr);
+        break;
+    case OPCODES.LDI:	// LDI - Load indirect
+        acc = fetch(fetch(addr));
+        break;
+    case OPCODES.STA:	// STA - Store
+        store(addr, acc);
+        break;
+    case OPCODES.STI:	// STI - Store indirect
+        store(fetch(addr), acc);
+        break;
+    case OPCODES.ADD:	// ADD - Add
+        acc += fetch(addr);
+        acc %= 10000;
+        break;
+    case OPCODES.SUB:	// SUB - Subtract
+        acc -= fetch(addr);
+        if (acc < 0) {
+	    acc = 0;
+        }
+        break;
+    case OPCODES.JAZ:	// JAZ - Test accumulator
+        if (acc == 0) {
+	    store(99, pc+(OPCODES.JAZ*100));
+	    pc = addr;
+        }
+        break;
+    case OPCODES.HRS:	// HRS - Halt and reset
+        autorun = false;
+        --pc; // stay at home
+        acc = 0;
+        break;
+    }
+    e_pc.value = ndig(pc, 2);
+    e_acc.value = ndig(acc, 4);
+    showpc();
+}
+
+function dorstep() {
+    if (autorun == false)
+        clearInterval(autorun_id);
+    else
+        dostep();
+}
+
+function doslow() {
+    if ( e_state.innerHTML != '' )
+        return;
+    autorun = true;
+    autorun_id = setInterval(dorstep, 500);
+}
+
+function dorun() {
+    if ( e_state.innerHTML != '' )
+        return;
+    autorun = true;
+    while (autorun)
+        dostep();
+}
+
+</script>
+<body bgcolor="#F7F7F7">
+<h1>Simulateur Cardiac S21</h1>
+<hr>
+
+<center>
+<h2>Cardiac CPU <span id="state"></span></h2>
+
+<table>
+<tbody>
+<tr>
+  <td style="border:solid 1px black;">
+    <table id="cpu">
+    <tbody>
+    <tr>
+      <td>
+	<center>
+	Compteur ordinal (CO) : <input type="text" id="pc" size=2em style="border-color:#99FFCC" onkeydown="hidepc();" onkeyup="showpc();">
+	<hr>
+	Registre d'instruction (RI) : <input type="text" id="ir" size=3em style="color:#fe2e2e" readonly><br>
+	<hr>
+	D&eacute;codeur d'instruction : <input type="hidden" id="ir_src">
+        <br>
+	Instruction : <input type="text" id="opcode" size=3em style="border-color:#f6cac9" readonly>
+	Op&eacute;rande : <input type="text" id="operand" size=2em style="border-color:#f6cac9" readonly>
+	<hr>
+	Accumulateur (Acc) : <input type="text" id="acc" size=5em readonly>
+	<hr>
+	<input type="button" id="reset" value="Reset" onclick="doreset();">
+	<input type="button" id="clearmem" value="Vider la m&eacute;moire" onclick="doclearmem();">
+	<br>
+	<input type="button" id="step" value="Pas" onclick="dostep();">
+	<input type="button" id="slow" value="Lent" onclick="doslow();">
+	<input type="button" id="run" value="Ex&eacute;cuter" onclick="dorun();">
+	<input type="button" id="stop" value="Arr&ecirc;ter" onclick="autorun = 0;">
+	</center>
+      </td>
+      <td>
+	<table border="1" style="font-size:80%;">
+	<thead>
+	<th>Opcode</th><th>Nom</th><th>Op&eacute;ration (@ est l&apos;adresse en op&eacute;rande)</th>
+	</thead>
+	<tbody>
+	<tr id='opc0'><td align="center">0</td><td>INP</td><td>Mem[@] = Input</td></tr>
+	<tr id='opc1'><td align="center">1</td><td>OUT</td><td>Output = Mem[@]</td></tr>
+	<tr id='opc2'><td align="center">2</td><td>LDA</td><td>Acc = Mem[@]</td></tr>
+	<tr id='opc3'><td align="center">3</td><td>LDI</td><td>Acc = Mem[Mem[@]]</td></tr>
+	<tr id='opc4'><td align="center">4</td><td>STA</td><td>Mem[@] = Acc</td></tr>
+	<tr id='opc5'><td align="center">5</td><td>STI</td><td>Mem[Mem[@]] = Acc</td></tr>
+	<tr id='opc6'><td align="center">6</td><td>ADD</td><td>Acc = Acc + Mem[@]</td></tr>
+	<tr id='opc7'><td align="center">7</td><td>SUB</td><td>Acc = Acc - Mem[@]</td></tr>
+	<tr id='opc8'><td align="center">8</td><td>JAZ</td><td>if (Acc == 0) { Mem[99] = 800 + CO; CO = @; }</td></tr>
+	<tr id='opc9'><td align="center">9</td><td>HRS</td><td>Acc = 0; CO = 0; HALT;</td></tr>
+	</tbody>
+	</table>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+  </td>
+</tr>
+</tbody>
+</table>
+<br>
+</center>
+
+<hr><center><h2>Cellules m&eacute;moire (m&eacute;moire centrale) et entr&eacute;e/sortie</h2>
+<table>
+<tbody>
+<tr>
+  <td>
+    <table style="border-right: ridge">
+    <thead>
+    <th>Ruban</th><th>Entr&eacute;e</th><th></th>
+    </thead>
+    <tbody>
+    <tr align="center">
+      <td><textarea id="deck" cols=3em rows=15></textarea></td>
+      <td><textarea id="input" cols=3em rows=15 readonly></textarea></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr align="center">
+      <td colspan="2"><input type="button" value="Charger ruban" onclick="doload();" style="width:100%"></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    </tbody>
+    </table>
+  </td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td>
+    <table id="memory"></table>
+    <script>
+function buildmemory() {
+    var t = document.getElementById('memory');
+    for (var r = 0; r < 10; ++r) {
+        var row = t.insertRow();
+        for (var c = 0; c < 10; ++c) {
+            var pos = ""+c+r;
+            var lbl = '<span id="lbl'+pos+'">'+pos+'</span>';
+            var inp = '<input type="text" id="mem'+pos+'" tabindex="'+c*10+r+1+'">';
+            var cell1 = row.insertCell();
+            cell1.innerHTML = '<td>'+lbl+':</td>';
+            var cell2 = row.insertCell();
+            cell2.innerHTML = '<td>'+inp+'</td>';
+            var cell3 = row.insertCell();
+            cell3.innerHTML = '<td><span id="equ'+pos+'"></span></td>';
+        }
+    }
+    document.getElementById('mem00').value='001';
+    document.getElementById('mem99').value=''+OPCODES.JAZ+'--';
+}
+buildmemory();
+    </script>
+  </td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td>
+    <table style="border-left: ridge">
+    <thead>
+    <th></th><th>Sortie</th>
+    </thead>
+    <tbody>
+    <tr align="center">
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><textarea id="output" cols=3em rows=17 readonly></textarea></td>
+    </tr>
+    </tbody>
+    </table>
+  </td>
+</tr>
+</tbody>
+</table>
+</center><br><hr>
+
+<script>init();doreset();</script>
+
+<!-- Alain -->
+<input type="button" value="Compiler" onclick="parse(0);">
+<input type="button" value="Charger le programme en m&eacute;moire" onclick="parse(1);">
+<input type="button" value="Charger le programme en ruban bootable" onclick="parse(2);">
+<!-- Num&eacute;roter les lignes <input type="checkbox" id="srcnumbers" name="srcnumbers"> -->
+<br>
+<textarea id="source" cols=80 rows=40 style="font-family: monospace;" spellcheck="false"></textarea>
+<textarea id="diag" cols=40 rows=40 style="font-family: monospace;" readonly></textarea>
+<hr>
+<script>
+
+var TRAIL = "\\s*(;.*)?";
+var NBR = "([0-9]+)"
+var ID    = "([a-zA-Z][a-zA-Z0-9_]*)"
+var OPC   = "(DATA|INP|LDA|ADD|JAZ|LDI|OUT|STA|SUB|STI|HRS)"
+var EMPTY = new RegExp("^"+TRAIL+"$")
+var DIREC = new RegExp("^\\s*\\.at\\s+([0-9]+)"+TRAIL+"$")
+var INSNS = new RegExp("^\\s*("+ID+"\\s*:\\s)?"
+                       +"\\s*"+OPC
+                       +"\\s+("+ID+"|"+NBR+")"+TRAIL+"$")
+
+
+function sanitize(line) {
+    var numbers = line.match(/^\s*[0-9]+\|/);
+    if ( numbers )
+        line = line.substring(numbers[0].length);
+    var marker = line.match(/^#[0-9]+>/);
+    if ( marker )
+        line = line.substring(marker[0].length);
+    return line;
+}
+
+function errmsg(errno,lineno,msg) {
+    return ndig(lineno+1,3)+"|"+"#"+errno+": "+msg+"\n";
+}
+
+function fmtinsn(insn) {
+    var l = ( insn.label ? insn.label : "");
+    return (l+"        ").substring(0,8)
+        +" "+ndig(insn.addr,2)
+        +": "+ndig(insn.binary,3)
+        +" | "+insn.tip
+        +"\n";
+}
+
+function parse(charge) {
+    var sourcetext = document.getElementById('source');
+    var src = sourcetext.value.split('\n');
+    var diag = document.getElementById('diag');
+    diag.value = '';
+
+    var faulty = false;
+
+    diag.value += "Compilation...\n";
+    var lineno;
+    var addr = 1;
+    var error = 1;
+    var firstinsn = -1;
+    var LBLS = {};
+    var PROG = [];
+    for (lineno=0 ; lineno < src.length ; lineno++ )
+    {
+        src[lineno] = sanitize(src[lineno])
+        var line = src[lineno];
+        if ( line.match(EMPTY) ) {
+            // diag.value += "=== EMPTY\n";
+        }
+        else {
+            var mdirec = line.match(DIREC);
+            if ( mdirec ) { // diag.value += "=== DIREC\n";
+                addr = parseInt(mdirec[1]);
+            }
+            else {
+                var minsns = line.match(INSNS);
+                if ( minsns ) { // diag.value += "=== INSN\n";
+                    if ( addr < 1 || addr >= 99 ) {
+                        diag.value += errmsg(error,lineno,"adresse "+addr
+                                             +" completement a l'ouest");
+                        src[lineno] = "#"+error+">"+src[lineno];
+                        ++error;
+                        faulty = true;
+                    }
+                    else {
+                        var label = minsns[2];
+                        var opc = minsns[3];
+                        var pid = minsns[5];
+                        var pnb = minsns[6];
+                        if ( label ) {
+                            if ( label in LBLS ) {
+                                diag.value += errmsg(error,lineno,"label '"
+                                                     +label+"' redefini");
+                                src[lineno] = "#"+error+">"+src[lineno];
+                                ++error;
+                                faulty = true;
+                            }
+                            LBLS[label] = addr;
+                        }
+                        PROG.push({ addr:addr, label:label,
+                                    opc:opc, pid:pid, pnb:pnb,
+                                    tip:opc+" "+minsns[4],
+                                    line:lineno });
+                        if ( firstinsn == -1 && opc != "DATA" )
+                            firstinsn = addr;
+                    }
+                    addr += 1;
+                }
+                else { // line ignored, faulty
+                    diag.value += errmsg(error,lineno,"n'importe nawak");
+                    src[lineno] = "#"+error+">"+src[lineno];
+                    ++error;
+                    faulty = true;
+                }
+            }
+        }
+    }
+
+    diag.value += "Resolution des adresses...\n"; // FIXME: encoding
+    PROG.sort(function(x, y) { return x.addr - y.addr; });
+    for ( var i=0 ; i<PROG.length ; i++ ) {
+        var insn = PROG[i];
+        var a;
+        if ( i>0 && insn.addr == PROG[i-1].addr ) {
+            var prev = PROG[i-1].line+1;
+            diag.value += errmsg(error,insn.line,"recouvre la ligne "+prev);
+            src[insn.line] = "#"+error+">"+src[insn.line];
+            // src[prev] = "#"+error+">"+src[prev];
+            ++error;
+            faulty = true;
+        }
+        else if ( insn.pnb ) {
+            a = parseInt(insn.pnb);
+        }
+        else if ( LBLS.hasOwnProperty(insn.pid) ) {
+            a = LBLS[insn.pid];
+        }
+        else {
+            diag.value += errmsg(error,insn.line,"c'est quoi "+insn.pid+" ?");
+            src[insn.line] = "#"+error+">"+src[insn.line];
+            ++error;
+            faulty = true;
+        }
+        insn.binary = ( insn.opc == "DATA" ? a : OPCODES[insn.opc]*100 + a );
+    }
+
+    // We are done with source, copy sanitized version
+    var srcnum = 0; //document.getElementById('srcnumbers').checked;
+    {
+        var s = "";
+        for ( var i=0 ; i<src.length ; i++ ) {
+            if ( srcnum )
+                s += ndig(i+1,3)+"|";
+            s += src[i] + "\n";
+        }
+        sourcetext.value = s;
+    }
+
+    if ( faulty ) {
+        diag.value += "Echec\n";
+        return;
+    }
+
+    for ( var i=0 ; i<PROG.length ; i++ ) {
+        var insn = PROG[i];
+        diag.value += fmtinsn(insn);
+    }
+    if ( charge == 1 ) {
+        doreset();
+        doclearmem();
+        diag.value += "Chargement...\n";
+        // Fill memory
+        for ( var i=0 ; i<PROG.length ; i++ ) {
+            var insn = PROG[i];
+            //store(insn.addr,insn.binary);
+            var mem = document.getElementById('mem'+ndig(insn.addr, 2));
+            mem.value = ndig(insn.binary, 3);
+            mem.title = insn.tip;
+        }
+        // Change labels
+        for ( var k in LBLS ) {
+            if ( LBLS.hasOwnProperty(k) ) {
+                var pos = ndig(LBLS[k],2);
+                // FIXME: labels
+                document.getElementById('lbl'+pos).innerHTML = pos+" ("+k+")";
+                //document.getElementById('equ'+pos).innerHTML = "="+k;
+            }
+        }
+        // Set instruction counter
+        if ( firstinsn == -1 ) {
+            diag.value += "Compteur ordinal non positionné,"
+                + " pas d'instruction...\n";
+        }
+        else {
+            hidepc();
+            e_pc.value = ndig(firstinsn,2);
+            showpc();
+        }
+    }
+    else if ( charge == 2 ) {
+        diag.value += "Bootstrap...\n";
+        if ( PROG[0].addr <= 3 ) {
+            diag.value += "Impossible, la première cellule doit être > 2.\n";
+        }
+        else {
+            var savedeck = e_deck.value; // hack to call doload() below
+            var bsdeck = "002\n800\n";
+            for ( var i=0 ; i<PROG.length ; i++ ) {
+                var insn = PROG[i];
+                bsdeck += "0" + ndig(insn.addr,2) + "\n"
+                    + ndig(insn.binary,3) + "\n";
+            }
+            if ( firstinsn == -1 ) {
+                diag.value += "Compteur ordinal non positionné,"
+                    + " pas d'instruction...\n";
+                diag.value += "Halt après bootstrap.\n";
+                bsdeck += "900\n";
+            }
+            else {
+                bsdeck += "8" + ndig(firstinsn,2) + "\n";
+                bsdeck += savedeck;
+                hidepc();
+                e_pc.value = "00";
+                showpc();
+            }
+            e_deck.value = bsdeck;
+            doload(); // hack
+            e_deck.value = savedeck;
+        }
+    }
+
+    diag.value += "OK\n";
+}
+</script>
+</body>
+</html>

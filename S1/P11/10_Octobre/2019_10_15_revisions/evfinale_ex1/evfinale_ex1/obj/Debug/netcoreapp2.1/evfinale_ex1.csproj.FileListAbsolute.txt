@@ -1,0 +1,11 @@
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\obj\Debug\netcoreapp2.1\evfinale_ex1.csprojAssemblyReference.cache
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\obj\Debug\netcoreapp2.1\evfinale_ex1.csproj.CoreCompileInputs.cache
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\obj\Debug\netcoreapp2.1\evfinale_ex1.AssemblyInfoInputs.cache
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\obj\Debug\netcoreapp2.1\evfinale_ex1.AssemblyInfo.cs
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\bin\Debug\netcoreapp2.1\evfinale_ex1.deps.json
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\bin\Debug\netcoreapp2.1\evfinale_ex1.runtimeconfig.json
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\bin\Debug\netcoreapp2.1\evfinale_ex1.runtimeconfig.dev.json
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\bin\Debug\netcoreapp2.1\evfinale_ex1.dll
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\bin\Debug\netcoreapp2.1\evfinale_ex1.pdb
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\obj\Debug\netcoreapp2.1\evfinale_ex1.dll
+X:\S1\P11\2019_10_15\evfinale_ex1\evfinale_ex1\obj\Debug\netcoreapp2.1\evfinale_ex1.pdb

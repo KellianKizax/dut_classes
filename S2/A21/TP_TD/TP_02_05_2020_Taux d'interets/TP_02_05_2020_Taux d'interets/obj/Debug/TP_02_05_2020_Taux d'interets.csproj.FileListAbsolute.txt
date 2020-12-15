@@ -1,0 +1,9 @@
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\bin\Debug\TP_02_05_2020_Taux d'interets.exe.config
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\bin\Debug\TP_02_05_2020_Taux d'interets.exe
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\bin\Debug\TP_02_05_2020_Taux d'interets.pdb
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\obj\Debug\TP_02_05_2020_Taux d'interets.csprojAssemblyReference.cache
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\obj\Debug\TP_02_05_2020_Taux_d_interets.frmInterets.resources
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\obj\Debug\TP_02_05_2020_Taux_d_interets.Properties.Resources.resources
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\obj\Debug\TP_02_05_2020_Taux d'interets.csproj.GenerateResource.cache
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\obj\Debug\TP_02_05_2020_Taux d'interets.exe
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_05_2020_Taux d'interets\TP_02_05_2020_Taux d'interets\obj\Debug\TP_02_05_2020_Taux d'interets.pdb

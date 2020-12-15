@@ -1,0 +1,48 @@
+﻿>>fonc cryptage_chaine(string <chaine>, int <decalage>)
+	crypte une chaine de caractères pour un décalage donné (0  -> 26)
+
+>>fonc decryptage_chaine(string <chaine>, int <decalage>)
+	décrypte une chaine de caractères pour un décalage donné (0 -> 26)
+
+METHODE BRUTE
+>>fonc decryptage_brute(string <chaine>)
+	test différents décalages : 0, puis 1, puis 2,...
+	affiche la chaine cryptée
+		boucle 	: affiche chaine décryptée => decryptage_chaine()
+			  affiche décalage de 0/1/2...
+			  demande si le texte est compréhensible
+
+METHODE ANALYSE DE FREQUENCE
+'e' lettre la plus utilisée en francais
+
+>>fonc nb_occurence(string <chaine>, char <caractere>)
+	retourne le nombre d'occurence d'un caractère dans une chaine
+
+>>fonc lettre_maximum_nb_occurence(string <chaine>)
+	
+
+>>fonc lettre_max_freq(string <chaine>, string <characteres_interdits>)
+occmax=0
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+longueur_alphabet = alphabet.Length
+boucle:
+	i = [0;25]
+	boucle:
+		for y = [0;longueur-1]
+			c = alphabet[y]
+			if chaine[i] != c
+				lettre_test = lettre_test + 0
+			else
+				lettre_test = lettre_test + 1
+		if lettre_teste == 0
+			lettres_liste = lettres_liste + chaine[i]
+
+----ICI
+
+boucle:
+	occ = nb_occurence(char c)
+	if occ > occmax
+		occmax = occ
+		lettre = c
+
+

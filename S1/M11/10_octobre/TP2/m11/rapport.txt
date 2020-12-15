@@ -1,0 +1,39 @@
+------------------------------------------------------- 
+
+ Date et heure de création : 2019-10-17 16:49:40+02:00 
+
+------------------------------------------------------- 
+
+Running tests...
+Test project /local/moulinettes/iinm21_build/bd/tmp.dpNC86Bcco
+    Start 1: conversions_simples
+1/9 Test #1: conversions_simples ..............   Passed    0.01 sec
+    Start 2: conversions_grandes_bases
+2/9 Test #2: conversions_grandes_bases ........   Passed    0.01 sec
+    Start 3: conversion_nombres_extremes
+3/9 Test #3: conversion_nombres_extremes ......   Passed    0.01 sec
+    Start 4: comptage_simple
+4/9 Test #4: comptage_simple ..................   Passed    0.01 sec
+    Start 5: comptage_36
+5/9 Test #5: comptage_36 ......................   Passed    0.01 sec
+    Start 6: encodage_non_signe_simple
+6/9 Test #6: encodage_non_signe_simple ........   Passed    0.01 sec
+    Start 7: encodage_non_signe_extreme
+7/9 Test #7: encodage_non_signe_extreme .......***Timeout   1.02 sec
+    Start 8: encodage_signe_simple
+8/9 Test #8: encodage_signe_simple ............***Failed    0.01 sec
+    Start 9: encodage_signe_extreme
+9/9 Test #9: encodage_signe_extreme ...........***Failed    0.01 sec
+
+67% tests passed, 3 tests failed out of 9
+
+Total Test time (real) =   1.09 sec
+
+The following tests FAILED:
+	  7 - encodage_non_signe_extreme (Timeout)
+	  8 - encodage_signe_simple (Failed)
+	  9 - encodage_signe_extreme (Failed)
+
+ ¯\_(ツ)_/¯ 
+
+ Chuck Norris wipes his ass with a Brillo Pad.

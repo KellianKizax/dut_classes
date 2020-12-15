@@ -1,0 +1,11 @@
+X:\S1\P12\TP_19_11_07\tableau\tableau\bin\Debug\netcoreapp2.1\tableau.deps.json
+X:\S1\P12\TP_19_11_07\tableau\tableau\bin\Debug\netcoreapp2.1\tableau.runtimeconfig.json
+X:\S1\P12\TP_19_11_07\tableau\tableau\bin\Debug\netcoreapp2.1\tableau.runtimeconfig.dev.json
+X:\S1\P12\TP_19_11_07\tableau\tableau\bin\Debug\netcoreapp2.1\tableau.dll
+X:\S1\P12\TP_19_11_07\tableau\tableau\bin\Debug\netcoreapp2.1\tableau.pdb
+X:\S1\P12\TP_19_11_07\tableau\tableau\obj\Debug\netcoreapp2.1\tableau.csprojAssemblyReference.cache
+X:\S1\P12\TP_19_11_07\tableau\tableau\obj\Debug\netcoreapp2.1\tableau.csproj.CoreCompileInputs.cache
+X:\S1\P12\TP_19_11_07\tableau\tableau\obj\Debug\netcoreapp2.1\tableau.AssemblyInfoInputs.cache
+X:\S1\P12\TP_19_11_07\tableau\tableau\obj\Debug\netcoreapp2.1\tableau.AssemblyInfo.cs
+X:\S1\P12\TP_19_11_07\tableau\tableau\obj\Debug\netcoreapp2.1\tableau.dll
+X:\S1\P12\TP_19_11_07\tableau\tableau\obj\Debug\netcoreapp2.1\tableau.pdb

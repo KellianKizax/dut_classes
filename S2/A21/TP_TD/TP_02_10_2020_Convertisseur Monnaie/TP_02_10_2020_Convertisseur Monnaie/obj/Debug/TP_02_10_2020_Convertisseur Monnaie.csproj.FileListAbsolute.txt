@@ -1,0 +1,9 @@
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\obj\Debug\TP_02_10_2020_Convertisseur Monnaie.csprojAssemblyReference.cache
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\obj\Debug\TP_02_10_2020_Convertisseur_Monnaie.frmDepart.resources
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\obj\Debug\TP_02_10_2020_Convertisseur_Monnaie.Properties.Resources.resources
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\obj\Debug\TP_02_10_2020_Convertisseur Monnaie.csproj.GenerateResource.cache
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\bin\Debug\TP_02_10_2020_Convertisseur Monnaie.exe.config
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\bin\Debug\TP_02_10_2020_Convertisseur Monnaie.exe
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\bin\Debug\TP_02_10_2020_Convertisseur Monnaie.pdb
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\obj\Debug\TP_02_10_2020_Convertisseur Monnaie.exe
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_10_2020_Convertisseur Monnaie\TP_02_10_2020_Convertisseur Monnaie\obj\Debug\TP_02_10_2020_Convertisseur Monnaie.pdb

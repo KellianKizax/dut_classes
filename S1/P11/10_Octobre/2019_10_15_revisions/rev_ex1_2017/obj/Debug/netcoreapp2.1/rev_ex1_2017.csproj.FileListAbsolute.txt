@@ -1,0 +1,11 @@
+X:\S1\P11\2019_10_15\rev_ex1_2017\bin\Debug\netcoreapp2.1\rev_ex1_2017.deps.json
+X:\S1\P11\2019_10_15\rev_ex1_2017\bin\Debug\netcoreapp2.1\rev_ex1_2017.runtimeconfig.json
+X:\S1\P11\2019_10_15\rev_ex1_2017\bin\Debug\netcoreapp2.1\rev_ex1_2017.runtimeconfig.dev.json
+X:\S1\P11\2019_10_15\rev_ex1_2017\bin\Debug\netcoreapp2.1\rev_ex1_2017.dll
+X:\S1\P11\2019_10_15\rev_ex1_2017\bin\Debug\netcoreapp2.1\rev_ex1_2017.pdb
+X:\S1\P11\2019_10_15\rev_ex1_2017\obj\Debug\netcoreapp2.1\rev_ex1_2017.csprojAssemblyReference.cache
+X:\S1\P11\2019_10_15\rev_ex1_2017\obj\Debug\netcoreapp2.1\rev_ex1_2017.csproj.CoreCompileInputs.cache
+X:\S1\P11\2019_10_15\rev_ex1_2017\obj\Debug\netcoreapp2.1\rev_ex1_2017.AssemblyInfoInputs.cache
+X:\S1\P11\2019_10_15\rev_ex1_2017\obj\Debug\netcoreapp2.1\rev_ex1_2017.AssemblyInfo.cs
+X:\S1\P11\2019_10_15\rev_ex1_2017\obj\Debug\netcoreapp2.1\rev_ex1_2017.dll
+X:\S1\P11\2019_10_15\rev_ex1_2017\obj\Debug\netcoreapp2.1\rev_ex1_2017.pdb

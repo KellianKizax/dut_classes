@@ -1,0 +1,11 @@
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\obj\Debug\netcoreapp2.1\table gaulois.csprojAssemblyReference.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\obj\Debug\netcoreapp2.1\table gaulois.csproj.CoreCompileInputs.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\obj\Debug\netcoreapp2.1\table gaulois.AssemblyInfoInputs.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\obj\Debug\netcoreapp2.1\table gaulois.AssemblyInfo.cs
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\bin\Debug\netcoreapp2.1\table gaulois.deps.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\bin\Debug\netcoreapp2.1\table gaulois.runtimeconfig.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\bin\Debug\netcoreapp2.1\table gaulois.runtimeconfig.dev.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\bin\Debug\netcoreapp2.1\table gaulois.dll
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\bin\Debug\netcoreapp2.1\table gaulois.pdb
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\obj\Debug\netcoreapp2.1\table gaulois.dll
+X:\S1\P12\TP_19_12_12_Table_Dico\table gaulois\obj\Debug\netcoreapp2.1\table gaulois.pdb

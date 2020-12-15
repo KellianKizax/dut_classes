@@ -1,0 +1,11 @@
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\bin\Debug\netcoreapp2.1\test_debugage.deps.json
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\bin\Debug\netcoreapp2.1\test_debugage.runtimeconfig.json
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\bin\Debug\netcoreapp2.1\test_debugage.runtimeconfig.dev.json
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\bin\Debug\netcoreapp2.1\test_debugage.dll
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\bin\Debug\netcoreapp2.1\test_debugage.pdb
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\obj\Debug\netcoreapp2.1\test_debugage.csprojAssemblyReference.cache
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\obj\Debug\netcoreapp2.1\test_debugage.csproj.CoreCompileInputs.cache
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\obj\Debug\netcoreapp2.1\test_debugage.AssemblyInfoInputs.cache
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\obj\Debug\netcoreapp2.1\test_debugage.AssemblyInfo.cs
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\obj\Debug\netcoreapp2.1\test_debugage.dll
+X:\P11\TP 4 Debugage\test_debugage\test_debugage\obj\Debug\netcoreapp2.1\test_debugage.pdb

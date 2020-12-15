@@ -1,0 +1,9 @@
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\bin\Debug\TP_02_07_2020_Traduc Verbes.exe.config
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\bin\Debug\TP_02_07_2020_Traduc Verbes.exe
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\bin\Debug\TP_02_07_2020_Traduc Verbes.pdb
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\obj\Debug\TP_02_07_2020_Traduc Verbes.csprojAssemblyReference.cache
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\obj\Debug\TP_02_07_2020_Traduc_Verbes.frmDepart.resources
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\obj\Debug\TP_02_07_2020_Traduc_Verbes.Properties.Resources.resources
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\obj\Debug\TP_02_07_2020_Traduc Verbes.csproj.GenerateResource.cache
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\obj\Debug\TP_02_07_2020_Traduc Verbes.exe
+C:\Users\disco\Desktop\A21\TP_TD\TP_02_07_2020_Traduc Verbes\TP_02_07_2020_Traduc Verbes\obj\Debug\TP_02_07_2020_Traduc Verbes.pdb

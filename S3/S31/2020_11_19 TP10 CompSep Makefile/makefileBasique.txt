@@ -1,0 +1,18 @@
+# Un premier makefile basique
+
+P1_fonct_base.o: P1_fonct_base.c includes.h
+	gcc -Wall -c P1_fonct_base.c
+
+P2_fonct_ES.o: P2_fonct_ES.c includes.h
+	gcc  -Wall -c P2_fonct_ES.c
+
+P3_fonct_transfert.o: P3_fonct_transfert.c includes.h
+	gcc -Wall -c P3_fonct_transfert.c
+
+tp10: tp10.c P3_fonct_transfert.o P2_fonct_ES.o P1_fonct_base.o
+	gcc -Wall tp10.c P3_fonct_transfert.o P2_fonct_ES.o P1_fonct_base.o -o tp10
+
+#supprimer les fichier *.o 
+clean:
+	rm -rf *.o 
+

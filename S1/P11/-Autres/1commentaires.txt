@@ -1,0 +1,21 @@
+// nom_du_script.cs : ce qu'il fait
+// Kellian GOFFIC
+
+
+
+
+//nom_de_la_proc : proc : ce qu'elle fait
+//Parametres :
+
+//      Xparam : type : keske
+//Local :
+//      nom_var_locale : type :keske
+
+
+//nom_de_la_fonc : fonc : type : ce qu'elle fait
+//Parametres :
+//      Xparam : type : keske
+//Local :
+//      nom_var_locale : type : keske
+//Retour :
+//	nom_var_retour : type : keske

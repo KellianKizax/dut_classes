@@ -17,7 +17,3 @@ DEFINITION
 	"P"("O") = {vide, {P}, {F}, {P,F}}
 	|"O"| = n		|"P"("O")| = 2^n
 	
-FORMULE
-	n parmis k
-	|k|	=	k! / (k-n)! * k^n
-	|n|

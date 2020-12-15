@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "table gaulois", "table gaulois.csproj", "{28BC0C1A-76B6-4B4E-9014-4B87467EE9C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28BC0C1A-76B6-4B4E-9014-4B87467EE9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BC0C1A-76B6-4B4E-9014-4B87467EE9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BC0C1A-76B6-4B4E-9014-4B87467EE9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BC0C1A-76B6-4B4E-9014-4B87467EE9C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57FCD1A8-17E7-4D42-A5B7-377695F172F0}
+	EndGlobalSection
+EndGlobal

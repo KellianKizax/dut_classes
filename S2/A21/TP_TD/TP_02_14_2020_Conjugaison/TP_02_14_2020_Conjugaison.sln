@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP_02_14_2020_Conjugaison", "TP_02_14_2020_Conjugaison\TP_02_14_2020_Conjugaison.csproj", "{A8803076-DEC3-4E3D-8DE6-BEF5E23D23D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8803076-DEC3-4E3D-8DE6-BEF5E23D23D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8803076-DEC3-4E3D-8DE6-BEF5E23D23D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8803076-DEC3-4E3D-8DE6-BEF5E23D23D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8803076-DEC3-4E3D-8DE6-BEF5E23D23D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A31BB8E-7669-4398-90FB-97F5588B2F55}
+	EndGlobalSection
+EndGlobal

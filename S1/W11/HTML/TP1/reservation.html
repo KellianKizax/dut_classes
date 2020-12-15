@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<link rel="stylesheet" href="/css/normalize.css">
+  <head>
+    <meta charset="utf-8">
+    <title> Jeux de Soc' &amp; thés </title>
+  </head>
+  <body>
+    <header>
+    <h1>Jeux de Soc' &amp; thés</h1>
+    <img src="img/labyrinthe.png" alt="image de labyrinthe">
+    <nav>
+    <ul>
+      <a href="index.html"><li>Accueil</li></a>
+      <a href="jeux.html"><li>Les jeux</li></a>
+      <a href="thes.html"><li>Les thés</li></a>
+      <a href="reservation.html"><li>Reservation</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+    </ul>
+  </nav>
+    </header>
+    <main>
+      <section>
+      	<h2>Réserver votre place</h2>
+				<ul>
+					<li>Vous voulez rencontrer d'autres joueurs accros au(x) même(s) jeu(x) ?</li>
+					<li>Vous voulez découvrir de nouveaux jeux avec vos amis ?</li>
+				</ul>
+				<p>Réservez votre table ou rejoignez un groupe en vous inscrivant ci-dessous :</p>
+				<form class="" action="index.html" method="post">
+					<label for="prenom_input">Prénom<input id ="prenom_input" type="text" name="prenom" value=""></label>
+					<br>
+					<label for="nom_input">Nom<input id ="nom_input" type="text" name="nom" value=""></label>
+					<br>
+					<label for="mail_input">Adresse mail<input id ="mail_input" type="email" name="mail" value=""></label>
+					<fieldset>
+						<legend>Je serai</legend>
+						<input id = "solo" type="radio" name="nombre" value="">
+						<label for="solo">seul</label>
+						<br>
+						<input id = "multi" type="radio" name="nombre" value="">
+						<label for="multi">en groupe avec</label> <input type="text" name="nombre" value=""><label for="multi"> personnes</label>
+					</fieldset>
+          <fieldset>
+            <legend>Je viendrai</legend>
+            <label for=""> Le <input id = "date" type="date" name="date" value=""> </label>
+            <br>
+            <label for=""> à <input id = "heure" type="time" name="heure" value=""> </label>
+          </fieldset>
+          <label for="">Commentaire <textarea name="comm" rows="8" cols="80"></textarea></label>
+          <label for=""><input id = "submit" type="submit" name="submit" value="Valider mon inscription"> </label>
+
+				</form>
+      </section>
+    </main>
+    <footer>
+      <p>Jeux de Soc' &amp; thés </p>
+      <p>72 Route du Rhin - 67411 Illkirch Cedex</p>
+    </footer>
+  </body>
+</html>

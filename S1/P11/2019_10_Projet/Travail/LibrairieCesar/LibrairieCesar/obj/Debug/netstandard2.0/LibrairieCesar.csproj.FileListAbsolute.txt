@@ -1,0 +1,9 @@
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\obj\Debug\netstandard2.0\LibrairieCesar.csprojAssemblyReference.cache
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\obj\Debug\netstandard2.0\LibrairieCesar.csproj.CoreCompileInputs.cache
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\obj\Debug\netstandard2.0\LibrairieCesar.AssemblyInfoInputs.cache
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\obj\Debug\netstandard2.0\LibrairieCesar.AssemblyInfo.cs
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\bin\Debug\netstandard2.0\LibrairieCesar.deps.json
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\bin\Debug\netstandard2.0\LibrairieCesar.dll
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\bin\Debug\netstandard2.0\LibrairieCesar.pdb
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\obj\Debug\netstandard2.0\LibrairieCesar.dll
+X:\P11\2019_10_Projet\LibrairieCesar\LibrairieCesar\obj\Debug\netstandard2.0\LibrairieCesar.pdb

@@ -1,0 +1,11 @@
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\bin\Debug\netcoreapp2.1\table tempo.txt.deps.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\bin\Debug\netcoreapp2.1\table tempo.txt.runtimeconfig.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\bin\Debug\netcoreapp2.1\table tempo.txt.runtimeconfig.dev.json
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\bin\Debug\netcoreapp2.1\table tempo.txt.dll
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\bin\Debug\netcoreapp2.1\table tempo.txt.pdb
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\obj\Debug\netcoreapp2.1\table tempo.txt.csprojAssemblyReference.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\obj\Debug\netcoreapp2.1\table tempo.txt.csproj.CoreCompileInputs.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\obj\Debug\netcoreapp2.1\table tempo.txt.AssemblyInfoInputs.cache
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\obj\Debug\netcoreapp2.1\table tempo.txt.AssemblyInfo.cs
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\obj\Debug\netcoreapp2.1\table tempo.txt.dll
+X:\S1\P12\TP_19_12_12_Table_Dico\table tempo\obj\Debug\netcoreapp2.1\table tempo.txt.pdb
