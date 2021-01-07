@@ -16,6 +16,8 @@ GameData g;
 // you should use this mutex somewhere..
 // pthread_mutex_t game_data_mutex = PTHREAD_MUTEX_INITIALIZER;
 
+
+
 void* server_listen_loop(void* arg)
 {
 	// wait for client messages
@@ -24,7 +26,11 @@ void* server_listen_loop(void* arg)
 	// - [RELEASE_ID, id]: release_player
 	// - [PLAYER_MOVE, id, MOVE_TYPE]: update_player_direction
 
+	fprintf(stderr, "serverlisten loop\n");
 	while( NULL == NULL ) {
+
+		/* UNIQUEMENT POUR DU TCP
+
 		int l = listen( sock, MAX_PLAYERS );
 		if ( l < 0 ) {
 			perror("Listen server.c");
@@ -39,19 +45,30 @@ void* server_listen_loop(void* arg)
 			perror("accept creation server.c");
 			exit(EXIT_FAILURE);
 		}
+		*/
+	
+		fprintf(stderr, "while\n");
+
+		struct sockaddr saddr_in;
+		socklen_t saddr_in_size = sizeof(saddr_in);
 
 		char request[1024];
-		int request_len = recv( new_socket, request, 1024, 0 );
+		//int request_len = recv( new_socket, request, 1024, 0 );
+		fprintf(stderr, "before recvfrom\n");
+		int request_len = recvfrom( sock, request, sizeof(request), 0, &saddr_in, &saddr_in_size );
+		fprintf(stderr, "after recvfrom\n");
 		if ( request_len < 0 ) {
 			perror("recv server.c");
 			exit(EXIT_FAILURE);
 		}
-		printf( "%s\n", request );
+		fprintf(stderr, "Request message : %s\n", request);
 
 	}
 
 	return NULL;
 }
+
+
 
 void* server_game_loop(void* arg)
 {
@@ -68,8 +85,11 @@ void* server_game_loop(void* arg)
 	return NULL;
 }
 
+
+
 int main(int argc, char** argv)
 {
+	fprintf(stderr, "main\n");
 	if (argc != 2)
 	{
 		fprintf(stderr, "Usage: %s port\n", argv[0]);
@@ -97,14 +117,18 @@ int main(int argc, char** argv)
 
 	init_gamedata(&g);
 
+	fprintf(stderr, "pthread_t\n");
 	pthread_t thr_listen, thr_game;
+	pthread_mutex_t game_data_mutex = PTHREAD_MUTEX_INITIALIZER;
 
+	fprintf(stderr, "pthred_create\n");
 	// launch server_listen_loop thread
 	pthread_create( &thr_listen, NULL, server_listen_loop, NULL );
 	
 	// launch server_game_loop thread
 	pthread_create( &thr_game, NULL, server_game_loop, NULL );
 
+	fprintf(stderr, "pthread_join\n");
 	// wait for threads end
 	pthread_join( thr_listen, NULL );
 	pthread_join( thr_game, NULL );

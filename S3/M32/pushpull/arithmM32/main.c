@@ -7,68 +7,44 @@
 #include <ctype.h>
 
 
-uint32_t crible(uint32_t N, uint32_t* prime_tab){
+int32_t fast_exp(uint32_t a,  uint32_t k, uint32_t n){
+    uint32_t res = a;
+    uint32_t puissance = k;
+    char paire = 'n';
 
-    uint64_t k, sqrt_N, i, nb_prime;
-    int *not_prime_tab;
-
-    k = 2;
-	sqrt_N = sqrt(N);
-
-	if ((not_prime_tab = calloc( N+1, sizeof(int))) == NULL) {
-		perror("calloc");
-        exit(EXIT_FAILURE);
+    if (k%2 == 0) {
+        paire = 'y';
     }
-	
-    while (k <= sqrt_N) {
-		for (i = 2 * k; i <= N; i += k) {
-			not_prime_tab[i] = 2;
+
+    while ( puissance > 0 ) {
+        if ( puissance > 1 ) {
+            res = ( res * res ) % n;
+            puissance = (uint32_t)( puissance / 2 );
         }
-		while (not_prime_tab[++k] == 2);
-	}
-
-    
-
-	nb_prime = 0;
-	for (i = 2; i <= N; i++) {
-		if ( not_prime_tab[i] != 2 ) {
-			nb_prime++;
-		}
-    }
-
-    if ((prime_tab = calloc( nb_prime+1, sizeof(uint32_t))) == NULL) {
-		perror("calloc");
-        exit(EXIT_FAILURE);
-    }
-
-    int ind = 0;
-    for (i = 2; i <= N; i++) {
-        if ( not_prime_tab[i] != 2 ) {
-            prime_tab[ind] = i;
-            ind++;
+        
+        else if ( !(puissance > 1) && (paire == 'n') ) {
+            res = (res * a) % n;
+            puissance -= 1;
         }
+
+        else {
+            puissance -= 1;
+        }
+
     }
 
-    for (int i = 0; i < nb_prime; i++) {
-        printf("%d ", prime_tab[i] );
-    }
-
-	free(not_prime_tab);
-
-    return nb_prime;
+    return res;
 }
-
-
-
-
 
 
 int main(int argc, char *argv[] ) {
 
-    uint32_t N = 15;
-    uint32_t* prime_tab;
+    uint32_t a = 3;
+    uint32_t k = 4;
+    uint32_t n = 100;
 
-    printf("%d\n", crible(N, prime_tab));
+
+    printf("%d\n", fast_exp(a, k, n) );
 
     return EXIT_SUCCESS;
 }
