@@ -1,0 +1,56 @@
+mydata <- read.csv(file="res.csv", sep="\t")
+
+df <- data.frame(mydata)
+
+random <- df[df$TabType == "random", ]
+insert <- random[random$SortType == "insertion", ]
+notinsert <- random[random$SortType != "insertion", ]
+merge <- random[random$SortType == "merge", ]
+quick <- random[random$SortType == "quick", ]
+
+
+ggrdinsertion <- ggplot() + geom_point(aes(y = SortTime, x = TabSize, color = SortType), data = random)
+
+ggrdinsertion <- ggrdinsertion + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = insert, color = "black")
+
+
+ggrdnotinsert <- ggplot() + geom_point(aes(y = SortTime, x = TabSize, color = SortType), data = notinsert)
+
+ggrdnotinsert <- ggrdnotinsert + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = merge, color = "black")
+
+ggrdnotinsert <- ggrdnotinsert + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = quick, color = "black")
+
+
+insert <- df[df$SortType == "insertion", ]
+merge <- df[df$SortType == "merge", ]
+quick <- df[df$SortType == "quick", ]
+
+rdinsert <- insert[insert$TabType == "random", ]
+psinsert <- insert[insert$TabType == "partlysorted", ]
+revinsert <- insert[insert$TabType == "reversed", ]
+
+rdmerge <- merge[merge$TabType == "random", ]
+psmerge <- merge[merge$TabType == "partlysorted", ]
+revmerge <- merge[merge$TabType == "reversed", ]
+
+rdquick <- quick[quick$TabType == "random", ]
+psquick <- quick[quick$TabType == "partlysorted", ]
+revquick <- quick[quick$TabType == "reversed", ]
+
+gginsertion <- ggplot() + geom_point(aes(y = SortTime, x = TabSize, color = TabType), data = insert)
+gginsertion <- gginsertion + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = rdinsert, color = "green")
+gginsertion <- gginsertion + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = psinsert, color = "red")
+gginsertion <- gginsertion + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = revinsert, color = "blue")
+
+
+ggmerge <- ggplot() + geom_point(aes(y = SortTime, x = TabSize, color = TabType), data = merge)
+ggmerge <- ggmerge + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = rdmerge, color = "green")
+ggmerge <- ggmerge + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = psmerge, color = "red")
+ggmerge <- ggmerge + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = revmerge, color = "blue")
+
+
+ggquick <- ggplot() + geom_point(aes(y = SortTime, x = TabSize, color = TabType), data = quick)
+ggquick <- ggquick + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = rdquick, color = "green")
+ggquick <- ggquick + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = psquick, color = "red")
+ggquick <- ggquick + geom_smooth(aes(y = SortTime, x = TabSize, color = SortType), data = revquick, color = "blue")
+

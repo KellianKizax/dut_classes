@@ -1,0 +1,15 @@
+Neymar:PSG:a:1992:br
+Ramos:Real Madrid:d:1986:es
+Lloris:Spurs Tottenham:g:1986:fr
+Benzema:Real Madrid:a:1987:fr
+Messi:Barcelone:a:1987:ar
+Ronaldo:Juventus Turin:a:1985:po
+Neuer:Bayern Munich:g:1986:de
+Alisson:Liverpool:g:1992:br
+Varane:Real Madrid:d:1993:fr
+Pogba:Manchester United:mo:1993:fr
+Firmino:Liverpool:a:1991:br
+Kante:Chelsea:md:1991:fr
+Marquinhos:PSG:d:1994:br
+Insigne:Naples:a:1991:it
+Fernandinho:Manchester City:md:1985:br

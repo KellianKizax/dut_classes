@@ -1,5 +1,7 @@
 package Semaine_30_nov;
 
+import java.util.List;
+
 public interface Arbin<T> {
 
     // Racine de l'arbre
@@ -249,6 +251,41 @@ public interface Arbin<T> {
        }
 
        return res;
+    }
+
+    /**
+     * 06/01/2021
+     * creerArbinPreInf
+     * Créé un arbre binaire à partir d'une liste préfixée et une liste infixée de cet arbre.
+     * @param lpre Liste préfixée de l'arbre.
+     * @param linf Liste infixée de l'arbre.
+     * @return Arbre binaire représenté par les deux listes.
+     */
+    default Arbin<T> creerArbinPreInf( List<T> lpre, List<T> linf ) {
+
+        Arbin<T> res;
+
+        if ( lpre.isEmpty() ) {
+            res = initArbin();
+        }
+        else {
+            T racine = lpre.get(0);
+
+            int ix = linf.indexOf(racine);
+
+            List<T> lpreg = lpre.subList(1, ix+1);
+            List<T> linfg = linf.subList(0, ix);
+            List<T> lpred = lpre.subList(ix+1, lpre.size());
+            List<T> linfd = linf.subList(ix+1, lpre.size());
+
+            Arbin<T> gauche = creerArbinPreInf( lpreg, linfg );
+            Arbin<T> droite = creerArbinPreInf( lpred, linfd );
+
+            res = initArbin( racine, gauche, droite );
+
+        }
+
+        return res;
     }
 
 }

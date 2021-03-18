@@ -50,17 +50,21 @@ void* server_listen_loop(void* arg)
 		fprintf(stderr, "while\n");
 
 		struct sockaddr saddr_in;
-		socklen_t saddr_in_size = sizeof(saddr_in);
+		socklen_t saddr_in_size;
 
-		char request[1024];
-		//int request_len = recv( new_socket, request, 1024, 0 );
+		char request[3];
+
 		fprintf(stderr, "before recvfrom\n");
-		int request_len = recvfrom( sock, request, sizeof(request), 0, &saddr_in, &saddr_in_size );
+		
+		int request_len = recvfrom( sock, request, 3, 0, &saddr_in, &saddr_in_size );
+		
 		fprintf(stderr, "after recvfrom\n");
+		
 		if ( request_len < 0 ) {
 			perror("recv server.c");
 			exit(EXIT_FAILURE);
 		}
+		
 		fprintf(stderr, "Request message : %s\n", request);
 
 	}

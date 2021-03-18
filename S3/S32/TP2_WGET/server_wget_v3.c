@@ -72,7 +72,7 @@ int main( int argc, char* argv[] ) {
     buff_file_req = strtok( NULL, delim );
 
     char* path_file_request;
-    path_file_request = malloc( strlen(buff_file_req)+2);
+    path_file_request = malloc( strlen(buff_file_req)+2 );
     strcpy( path_file_request, "." );
     strcat( path_file_request, buff_file_req );
 

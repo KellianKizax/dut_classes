@@ -27,6 +27,15 @@ uint8_t get_player_id(int sock, struct addrinfo* server_info)
 	// send 1 byte [REQUEST_ID] & wait
 	// server will respond with 2 bytes [REQUEST_ID, id]
 
+	sendto( sock, REQUEST_ID, 1, 0, server_info->ai_addr, server_info->ai_addrlen );
+
+	char buffer[2];
+	struct sockaddr from;
+	socklen_t length;
+
+	recvfrom( sock, buffer, 2, 0, &from, &length );
+	fprintf(stderr, "%s\n", buffer);
+
 	return 0;
 }
 
@@ -45,7 +54,7 @@ int main(int argc, char** argv)
 {
 	if (argc != 3)
 	{
-		fprintf(stderr, "Usage: %s serverIP serverPORT\n", argv[0]);
+		fprintf(stderr, "Usage: %s serverPORT serverIP\n", argv[0]);
 		return EXIT_FAILURE;
 	}
 	
@@ -68,10 +77,18 @@ int main(int argc, char** argv)
 		return EXIT_FAILURE;
 	}
 
+	struct addrinfo hints;
+
+	memset( &hints, 0, sizeof(hints) );
+	hints.ai_family = AF_INET;
+	hints.ai_socktype = SOCK_DGRAM;
+
+	getaddrinfo( argv[2], argv[1], &hints, &server_info );
+
 	srand(time(NULL));
 
-	// ----------------------------------------------------
 
+	// ----------------------------------------------------
 
 
 	if (SDL_Init(SDL_INIT_VIDEO) == -1)

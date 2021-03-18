@@ -1,0 +1,14 @@
+1. Tourner, oui, correctement, non.
+
+2. C'est le Lock() commun qui est verrouillé.
+
+3. daemon true ?
+
+4. A un thread qui attend cette meme condition
+    Le signal persiste jusqua trouver une cible
+    (pas de problème au démarrage, meme si ping
+    envoi un signal avant que pong en attende un ('sleep(random)') )
+    Non ca nous arrange
+
+5.  Parce que si le thread se débloque mais que le switch n'est pas changé
+    il va quand même exécuté son programme sans le revérifier

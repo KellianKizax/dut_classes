@@ -29,11 +29,12 @@ int main( int argc, char* argv[] ) {
     struct addrinfo hints;  //filtres
 
     memset( &hints, 0, sizeof(hints) );
+    hints.ai_flags = AI_CANONNAME; // pour pouvoir mettre un nom tel que abcd.fr et pas une ip
     hints.ai_family = AF_INET;
-    hints.ai_socktype = SOCK_DGRAM;
+    hints.ai_socktype = SOCK_DGRAM; // SOCK_DGRAM pour udp : SOCK_STREAM pour tcp
 
     getaddrinfo( server_name, port, &hints, &res );
-    int s = socket( PF_INET, SOCK_DGRAM, 0 );
+    int s = socket( res->ai_family, res->ai_socktype, res->ai_protocol );
 
     if( s < 0 ) {
         perror( "socket" );
